@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const PaginationWrapper = styled.div`
-  grid-column: 2 / span 12;
+  grid-column: 2 / span 10;
   padding: 3rem 0;
   display: flex;
   align-items: center;
@@ -11,19 +11,19 @@ export const PaginationWrapper = styled.div`
 
   a:nth-child(1) {
     color: ${props =>
-      props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
+      props.isFirst ? props.theme.colors.blogTitle : props.theme.colors.navBackground};
     pointer-events: ${props => (props.isFirst ? "none" : "auto")};
     cursor: ${props => (props.isFirst ? "default" : "pointer")};
   }
 
   a:nth-child(2) {
     color: ${props =>
-      props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
+      props.isLast ? props.theme.colors.blogTitle : props.theme.colors.navBackground};
     pointer-events: ${props => (props.isLast ? "none" : "auto")};
     cursor: ${props => (props.isLast ? "default" : "pointer")};
   }
 
-  @media ${props => props.theme.breakpoints.tablet} {
+  @media ${props => props.theme.breakpoints.mobile} {
     grid-column: 2 / span 6;
   }
 `

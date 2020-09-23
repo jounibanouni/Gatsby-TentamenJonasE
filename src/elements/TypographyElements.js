@@ -50,6 +50,8 @@ export const P = styled.p`
         return props.theme.colors.light1
       case "light2":
         return props.theme.colors.light2
+      case "blogTitle":
+        return props.theme.colors.blogTitle;
       default:
         return props.theme.colors.dark1
     }
@@ -72,11 +74,13 @@ export const H1 = styled.h1`
         return props.theme.colors.light1
       case "light2":
         return props.theme.colors.light2
+        case "blogTitle":
+        return props.theme.colors.blogTitle;
       default:
         return props.theme.colors.dark1
     }
   }};
-  font-weight: 400;
+  font-weight: 600;
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   margin: ${props => (props.margin ? props.margin : 0)};
 `

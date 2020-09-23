@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-  grid-column: 2 / span 12;
+  grid-column: 2 / span 10;
   min-height: 11.25rem;
   padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
-  @media ${props => props.theme.breakpoints.tablet} {
+  @media ${props => props.theme.breakpoints.mobile} {
     grid-column: 2 / span 6;
   }
 `
@@ -20,6 +20,7 @@ export const FooterSocialWrapper = styled.div`
   text-align: center;
 
   p {
+    color: ${props => props.theme.colors.blogTitle};
     text-align: center;
     flex: 0 0 100%;
   }

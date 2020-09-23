@@ -11,6 +11,13 @@ export default {
     dark3: "hsl(227,2%,64%)",
     light1: "hsl(0,0%,97%)",
     light2: "hsl(0,0%,99%)",
+    mainBackground: "#231F20",
+    navBackground: "#ff7400",
+    link: "#231F20",
+    emptyLink: "#CACAAA",
+    mainContent: "#EFE6DD",
+    blogTitle: "#FFFFFF",
+    mainBackgroundLight: "#332d2f",
   },
   breakpoints: {
     mobile: "only screen and (max-width: 50rem)",
