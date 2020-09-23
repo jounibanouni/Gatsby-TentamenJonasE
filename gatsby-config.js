@@ -7,13 +7,13 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "My MDX Blog",
+    title: "Blog site using Gatsby and MDX",
     description: "A simple blog built with Gatsby and MDX",
     url: "https://your-site.netlify.app/",
     image:
       "https://frontend-magic.netlify.app/static/142900cccf67f74f52182a3914449904/37155/hero-img.png",
-    twitterUsername: "@rajahasware",
-    author: "Sohail Hasware",
+    twitterUsername: "@Jounikanouni",
+    author: "Jonas Eriksson",
   },
 
   plugins: [
