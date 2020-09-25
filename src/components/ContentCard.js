@@ -1,7 +1,9 @@
 import React from "react"
+// Import styling from elements folder for this component and eventual other components which is required to complete this component
 import { CardWrapper, P, H2 } from "../elements"
 import { Button } from "../components"
 
+//Set styling for presented blog-posts with based on data from templates
 export const ContentCard = ({ date, title, excerpt, slug }) => {
   return (
     <CardWrapper>

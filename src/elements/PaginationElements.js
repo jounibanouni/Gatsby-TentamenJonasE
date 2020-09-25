@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+//Depending on which page you are on, the correct styling should be generated.
 export const PaginationWrapper = styled.div`
   grid-column: 2 / span 10;
   padding: 3rem 0;

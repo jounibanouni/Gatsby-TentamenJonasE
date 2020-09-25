@@ -1,4 +1,5 @@
 import React from "react"
+//Import package for styling of code blocks on
 import Highlight, { defaultProps } from "prism-react-renderer"
 import theme from "prism-react-renderer/themes/vsDark"
 

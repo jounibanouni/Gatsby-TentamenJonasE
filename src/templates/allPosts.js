@@ -15,15 +15,15 @@ const allPosts = ({ pageContext, data }) => {
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? "/" : `/${currentPage - 1}`
   const nextPage = `/${currentPage + 1}`
-
+//Store all posts in variable posts
   const posts = data.allMdx.edges
 
+  //Fill components with data from posts variable and use variables declared above.
   return (
     <Container>
       <Seo />
       <FeatureImage />
       <Content>
-
         {posts.map(post => (
           <ContentCard
             key={post.node.frontmatter.slug}

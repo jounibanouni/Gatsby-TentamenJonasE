@@ -1,12 +1,16 @@
 import React from "react"
+//Import img function from gatsby-image for gatsby graphql queries
 import Img from "gatsby-image"
+// Call for optimized images requires graphql and staticquery
 import { useStaticQuery, graphql } from "gatsby"
+// Import styling from elements folder for this component
 import { FeatureImageWrapper } from "../elements"
 
+//Component, useStaticQuery and search for originalname of the file
 export const FeatureImage = ({ fixed }) => {
   const data = useStaticQuery(graphql`
     query {
-      imageSharp(fixed: { originalName: { eq: "sushi-overlay.jpg" } }) {
+      imageSharp(fixed: { originalName: { eq: "sushi-overlay.jpg" } }) { 
         fixed {
           ...GatsbyImageSharpFixed
         }
@@ -14,6 +18,7 @@ export const FeatureImage = ({ fixed }) => {
     }
   `)
 
+  //Make image responsive with styling in here
   return (
     <FeatureImageWrapper>
       <Img

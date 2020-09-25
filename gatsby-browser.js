@@ -6,6 +6,7 @@ import Theme from "./src/themes/theme"
 import { Table, Code } from "./src/components"
 import "./language-tabs.css"
 
+//Set globla styles for our site
 const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
@@ -35,6 +36,7 @@ const components = {
   wrapper: ({ children }) => <>{children}</>,
 }
 
+//Injecting our variables createed in theme in to Themeprovider so we can use themes in our whole site
 export const wrapRootElement = ({ element }) => (
   <MDXProvider components={components}>
     <ThemeProvider theme={Theme}>

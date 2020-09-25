@@ -17,7 +17,7 @@ export const ContentWrapper = styled.main`
     
   }
 `
-
+//Styling for showing blog posts next to eachother with flex-direction: row
 export const BlogOverviewWrapper = styled.div`
     grid-column: 2/ span 10;
     grid-row: 3 / span 8 ; 

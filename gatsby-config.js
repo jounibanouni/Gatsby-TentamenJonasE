@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  /* Metadata for SEO helmet as fallback*/
   siteMetadata: {
     title: "Blog site using Gatsby and MDX",
     description: "A simple blog built with Gatsby and MDX",
@@ -16,6 +16,7 @@ module.exports = {
     author: "Jonas Eriksson",
   },
 
+  //Plugin for sourcing data into your Gatsby application from your local filesystem.
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

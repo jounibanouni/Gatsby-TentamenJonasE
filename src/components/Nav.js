@@ -1,6 +1,8 @@
 import React from "react"
+// Import styling from elements folder for this component and eventual other components which is required to complete this component
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { NavWrapper, NavLinks } from "../elements"
+
 
 export const Nav = () => {
   const data = useStaticQuery(graphql`

@@ -1,4 +1,5 @@
 import React from "react"
+// Import styling from elements folder for this component and eventual other components which is required to complete this component
 import { useStaticQuery, graphql } from "gatsby"
 import {
   FooterWrapper,
@@ -7,6 +8,7 @@ import {
   P,
 } from "../elements"
 
+//Use query to get images for social links in footer
 export const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -25,6 +27,7 @@ export const Footer = () => {
     }
   `)
 
+  //Add anchor-tags for your logos in footer
   return (
     <FooterWrapper>
       <FooterSocialWrapper>

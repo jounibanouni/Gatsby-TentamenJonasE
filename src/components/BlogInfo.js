@@ -1,5 +1,5 @@
 import React from "react"
-
+// Import styling from elements folder for this component and eventual other components which is required to complete this component
 import {P, H1} from "../elements"
 import {BlogTitleWrapper} from "../elements"
 
